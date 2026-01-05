@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Pulse — Headlines, AI & Entertainment</title>
+  <meta name="description" content="Latest global headlines, trending topics in Artificial Intelligence, and world entertainment news." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121826;
+      --muted: #9aa4b2;
+      --text: #e6e9ef;
+      --accent: #6ee7ff;
+      --accent-2: #a78bfa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial;
+      background: linear-gradient(180deg, #0b0f14, #0e1320);
+      color: var(--text);
+    }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(8px);
+      background: rgba(11,15,20,.7);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .nav {
+      max-width: 1200px; margin: 0 auto; padding: 14px 16px; display: flex; align-items: center; gap: 16px;
+    }
+    .brand { font-weight: 800; letter-spacing: .4px; }
+    .brand span { color: var(--accent); }
+    .spacer { flex: 1; }
+    .nav a { color: var(--muted); text-decoration: none; margin-left: 14px; }
+    .nav a:hover { color: var(--text); }
+    main { max-width: 1200px; margin: 0 auto; padding: 24px 16px 64px; }
+    .hero {
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 20px; align-items: stretch; margin-bottom: 28px;
+    }
+    .hero-card {
+      background: radial-gradient(1200px 600px at -10% -10%, rgba(110,231,255,.15), transparent),
+                  radial-gradient(800px 400px at 110% 10%, rgba(167,139,250,.15), transparent),
+                  var(--card);
+      border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 22px;
+    }
+    .hero h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 8px; }
+    .hero p { color: var(--muted); line-height: 1.6; }
+    .badge { display: inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(110,231,255,.12); color: var(--accent); font-weight: 600; margin-bottom: 10px; }.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+.card {
+  grid-column: span 4;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.card h3 { margin: 4px 0; }
+.meta { color: var(--muted); font-size: 13px; }
+.tag { font-size: 12px; color: var(--accent-2); }
+.btn {
+  margin-top: auto; align-self: flex-start;
+  padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,.14);
+  background: transparent; color: var(--text); cursor: pointer;
+}
+.btn:hover { background: rgba(255,255,255,.06); }
+
+section { margin-top: 36px; }
+section h2 { margin-bottom: 14px; }
+
+footer {
+  border-top: 1px solid rgba(255,255,255,.06);
+  color: var(--muted);
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; padding: 22px 16px; display: flex; flex-wrap: wrap; gap: 12px; }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .card { grid-column: span 6; }
+}
+@media (max-width: 520px) {
+  .card { grid-column: span 12; }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">Global<span>Pulse</span></div>
+      <div class="spacer"></div>
+      <a href="#headlines">Headlines</a>
+      <a href="#ai">AI Trends</a>
+      <a href="#entertainment">Entertainment</a>
+    </div>
+  </header>  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <span class="badge">Today’s Highlights</span>
+        <h1>Global headlines, AI breakthroughs & entertainment buzz — in one place</h1>
+        <p>Stay informed with concise coverage of world news, trending topics in Artificial Intelligence, and the latest in movies, music, and pop culture. Updated daily with stories that matter.</p>
+      </div>
+      <div class="hero-card">
+        <h3>Why GlobalPulse?</h3>
+        <ul class="meta">
+          <li>🌍 Curated global perspective</li>
+          <li>🤖 Practical AI trends explained</li>
+          <li>🎬 Entertainment without the noise</li>
+        </ul>
+      </div>
+    </section><section id="headlines">
+  <h2>🌍 Global Headlines</h2>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">World</span>
+      <h3>Geopolitical shifts reshape global markets</h3>
+      <p class="meta">Leaders meet to address economic stability as currencies and commodities react worldwide.</p>
+      <button class="btn">Read more</button>
+    </article>
+    <article class="card">
+      <span class="tag">Climate</span>
+      <h3>Extreme weather drives new climate policies</h3>
+      <p class="meta">Nations accelerate adaptation plans amid record-breaking heat and storms.</p>
+      <button class="btn">Read more</button>
+    </article>
+    <article class="card">
+      <span class="tag">Tech</span>
+      <h3>Regulators debate digital privacy reforms</h3>
+      <p class="meta">Proposed frameworks aim to balance innovation and user protection.</p>
+      <button class="btn">Read more</button>
+    </article>
+  </div>
+</section>
+
+<section id="ai">
+  <h2>🤖 Trending in Artificial Intelligence</h2>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Generative AI</span>
+      <h3>Multimodal models redefine creativity</h3>
+      <p class="meta">Text, image, audio, and video generation converge for end‑to‑end workflows.</p>
+      <button class="btn">Explore</button>
+    </article>
+    <article class="card">
+      <span class="tag">AI Safety</span>
+      <h3>Alignment & governance take center stage</h3>
+      <p class="meta">Industry and policymakers collaborate on standards for responsible AI.</p>
+      <button class="btn">Explore</button>
+    </article>
+    <article class="card">
+      <span class="tag">Business</span>
+      <h3>AI agents boost productivity</h3>
+      <p class="meta">Autonomous assistants streamline research, coding, and customer support.</p>
+      <button class="btn">Explore</button>
+    </article>
+  </div>
+</section>
+
+<section id="entertainment">
+  <h2>🎬 World Entertainment</h2>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Film</span>
+      <h3>Blockbusters dominate global box office</h3>
+      <p class="meta">Franchises and original hits draw audiences back to cinemas.</p>
+      <button class="btn">Details</button>
+    </article>
+    <article class="card">
+      <span class="tag">Music</span>
+      <h3>Global sounds top streaming charts</h3>
+      <p class="meta">Cross‑border collaborations fuel viral hits worldwide.</p>
+      <button class="btn">Details</button>
+    </article>
+    <article class="card">
+      <span class="tag">Culture</span>
+      <h3>Creators reshape entertainment online</h3>
+      <p class="meta">Short‑form video and live platforms redefine fandoms.</p>
+      <button class="btn">Details</button>
+    </article>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="footer-inner">
+      <div>© 2026 GlobalPulse</div>
+      <div>•</div>
+      <div>Headlines • AI • Entertainment</div>
+    </div>
+  </footer>
+  <script>
+    // LIVE NEWS INTEGRATION (NewsAPI.org)
+    // 1. Get a free API key from https://newsapi.org
+    // 2. Replace YOUR_API_KEY_HERE belowconst API_KEY = "YOUR_API_KEY_HERE";
+const headlinesContainer = document.querySelector('#headlines .grid');
+const aiContainer = document.querySelector('#ai .grid');
+const entertainmentContainer = document.querySelector('#entertainment .grid');
+
+async function fetchNews(query, container) {
+  try {
+    const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&language=en&pageSize=3&apiKey=${API_KEY}`);
+    const data = await res.json();
+    container.innerHTML = '';
+    data.articles.forEach(article => {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `
+        <span class="tag">Live</span>
+        <h3>${article.title}</h3>
+        <p class="meta">${article.description || ''}</p>
+        <a class="btn" href="${article.url}" target="_blank">Read more</a>
+      `;
+      container.appendChild(card);
+    });
+  } catch (err) {
+    console.error('News fetch failed', err);
+  }
+}
+
+if (API_KEY !== "YOUR_API_KEY_HERE") {
+  fetchNews('global news', headlinesContainer);
+  fetchNews('artificial intelligence', aiContainer);
+  fetchNews('entertainment', entertainmentContainer);
+}
+
+  </script>
+</body>
+</html>
